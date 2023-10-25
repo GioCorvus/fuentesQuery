@@ -1,0 +1,245 @@
+/* Reset y estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    width: 1280px;
+    margin: 0 auto;
+    background-image: url('img/bg1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Encabezado */
+header {
+    background-color: #80c080;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 64px;
+    height: 64px;
+}
+
+/* Barra de navegación */
+nav {
+    background-color: #a0d0a0;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Contenido principal */
+.content {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto;
+}
+
+/* Cajas en el contenido */
+.box {
+    background-color: #c0e0c0;
+    padding: 20px;
+    margin-bottom: 20px;
+    height: 400px;
+    border-radius: 10px;
+    width: 540px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #80c080;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+}
+
+/* Titulo principal */
+.titulo {
+    font-size: 36px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    padding: 10px;
+}
+
+/* Enlaces de navegación */
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #80c080;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #a0d0a0;
+    color: #fff;
+}
+
+/* Imágenes dentro de las cajas */
+.box img {
+    width: 520px;
+    margin: 0 auto;
+}
+
+/* Contenido dentro de las cajas */
+.box div {
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 500px;
+    padding: 20px;
+    height: 90%;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+/* Subtítulo en las cajas */
+.titulin {
+    font-size: 20px;
+    margin-top: -5px;
+    color: pink;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: color 0.3s ease;
+    text-align: center;
+}
+
+.titulin:hover {
+    color: darkviolet;
+}
+
+/* Tabla de emisiones */
+.tabla-emisiones {
+    width: 480px;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabla-emisiones th, .tabla-emisiones td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.tabla-emisiones th {
+    background-color: #c0e0c0;
+}
+
+.tabla-emisiones tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Lista de emisiones */
+.lista-emisiones {
+    list-style-type: disc;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.lista-emisiones li {
+    margin-bottom: 10px;
+}
+
+/*********************************************************** Formulario ***************************************************************/
+#formulario {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    width: 500px;
+    margin: 0 auto;
+}
+
+/* Títulos del formulario */
+#formulario h2 {
+    color: darkgreen;
+    transition: color 0.3s ease;
+}
+
+#formulario h2:hover {
+    color: pink;
+}
+
+/* Etiquetas del formulario */
+#formulario label {
+    display: block;
+    margin-top: 20px;
+}
+
+/* Entradas de texto en el formulario */
+#formulario input[type="text"] {
+    width: 300px;
+    padding-left: 10px;
+}
+
+/* Radio y checkboxes en el formulario */
+#formulario input[type="radio"],
+#formulario input[type="checkbox"],
+#formulario select {
+    margin-top: 5px;
+}
+
+#formulario input[type="radio"],
+#formulario input[type="checkbox"] {
+    display: inline;
+}
+
+/* Botón de enviar en el formulario */
+#formulario button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}
+
+/* Secciones resaltadas en el formulario */
+.resaltado {
+    margin-top: 10px;
+    background-color: lightgoldenrodyellow;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.resaltado1 {
+    margin-top: 10px;
+    background-color: lightgreen;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Texto fuerte en el formulario */
+.fuerte {
+    font-weight: bold;
+}
+
+/* Centro de condiciones en el formulario */
+#centro-condiciones {
+    text-align: center;
+    margin: 10px;
+}
