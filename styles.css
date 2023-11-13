@@ -1,4 +1,11 @@
-/* Reset y estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+
+@font-face {
+    font-family: 'Pixel'; /* puedo darle el nombre que prefiera */
+    src: url('fuentes/PixelifySans-VariableFont_wght.ttf') format('truetype'); /* Ajusta la ruta y el formato según tu fuente (ttf, woff, etc.) */
+  }
+  
+
 html {
     width: 1280px; /* Mantenemos el ancho en píxeles */
     margin: 0 auto;
@@ -22,11 +29,16 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: 'Pixel', sans-serif;
 }
 
-header img {
-    width: 5%; /* ANCHO: (64px / 1280px) * 100% */
-    height: 5%;
+/* Pie de página */
+footer {
+    background-color: #80c080;
+    padding: 10px; /* 10 / 1280 x 100 */
+    text-align: center;
+    clear: both;
+    font-family: 'Crimson Text', 'Pixel', serif;
 }
 
 /* Barra de navegación */
@@ -34,6 +46,11 @@ nav {
     background-color: #a0d0a0;
     padding: 10px; /* 10 / 1280 x 100 */
     text-align: center;
+}
+
+header img {
+    width: 5%; /* ANCHO: (64px / 1280px) * 100% */
+    height: 5%;
 }
 
 nav ul {
@@ -67,14 +84,6 @@ nav li {
     border-radius: 10px;
     width: 42.1875%; /* ANCHO: (540px / 1280px) * 100% */
     /*width:540px;*/
-}
-
-/* Pie de página */
-footer {
-    background-color: #80c080;
-    padding: 10px; /* 10 / 1280 x 100 */
-    text-align: center;
-    clear: both;
 }
 
 /* Titulo principal */
@@ -120,6 +129,7 @@ nav ul li a:hover {
 
 /* Subtítulo en las cajas */
 .titulin {
+    font-family: 'Pixel', serif;
     font-size: 20px;
     margin-top: -5px;
     color: pink;
@@ -249,5 +259,71 @@ nav ul li a:hover {
 #centro-condiciones {
     text-align: center;
     margin: 10px; 
+}
+
+@media (width <= 1024px) {
+    html {
+        width:auto;   
+    }
+
+    header {
+        padding: 5px;
+    }
+
+    .content {
+        padding: 10px; 
+    }
+
+    .box {
+        width: 100%; 
+        background-color: rgb(43, 226, 159);
+        font-size: 20px;
+    }
+
+    .box img{
+        width:90%;
+        height:95%;
+    }
+
+    .box div {
+        width:90%;
+    }
+
+    .titulin {
+        font-size: 30px;
+        color: rgb(204, 94, 113);
+    }
+
+    #formulario {
+        width: 90%;
+    }
+}
+
+@media (width <= 760px) {
+    html {
+        width: auto;
+    }
+
+    header {
+        padding: 5px;
+    }
+
+    .content {
+        padding: 10px; 
+    }
+
+    .box {
+        width: 100%; 
+        background-color: rgba(51, 255, 0, 0.644);
+        font-size: 15px;
+    }
+
+    .box img{
+        width:90%;
+    }
+
+    #formulario {
+        width: 90%;
+    }
 }
 
